@@ -1,0 +1,67 @@
+#card_back {
+    margin: auto;
+    width: 1050px;
+    height: 600px;
+    border: 1px solid black;
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+
+    overflow: hidden;
+}
+
+#rec_red {
+    position: relative;
+    width: 520px;
+    height: 980px;
+    left: -80px;
+    top: -60px;
+    
+    background: #FF0000;
+    mix-blend-mode: multiply;
+    transform: rotate(-35.4deg);
+    
+} 
+    
+#rec_blue {
+    position: relative;
+    width: 756px;
+    height: 319px;
+    left: 294px;
+    top: -681px;
+        
+    background: #0000FF;
+    mix-blend-mode: multiply;
+    
+} 
+
+#details {
+    width: 50%;
+    height: 50%;
+    float: right;
+    margin: 20px;
+    position: fixed;
+    font-size: 24px;
+
+    top: 300px;
+}
+
+#text{
+    padding-right: 140px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+.fa-envelope, .fa-github {
+
+    font-size: 24px;
+}
+
+i {
+    margin-right: 20px;
+}
+
