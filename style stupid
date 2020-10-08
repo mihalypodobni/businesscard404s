@@ -1,0 +1,50 @@
+main{
+    width: 80vw;
+    margin: auto;
+}
+
+article {
+    display: inline-block;
+    border: 5px solid black;
+    width: 50%;
+}
+
+article > div {
+    font-family: 'Raleway', sans-serif;    
+    font-size: 20vw;
+    font-weight: 800;
+    padding-left: 5vw;
+}
+
+
+.red{
+    color: rgba(255, 0, 0, 0.897);
+}
+
+.blue{
+    color: rgba(0, 0, 255, 0.877);
+    margin-top: -23.5vw;
+}
+
+.green{
+    color: rgba(0, 255, 0, 0.767);
+    margin-top: -23.5vw;
+}
+
+.black {
+    margin-top: -23.5vw;
+}
+
+.s {
+    font-size: 10vw;
+}
+
+.redmess{
+
+}
+
+.greenmess{
+
+}
+
+.blue

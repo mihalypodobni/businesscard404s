@@ -1,0 +1,41 @@
+main{
+    margin: auto;
+}
+
+article {
+    display: inline-block;
+    border: 5px solid black;
+    width: 50%;
+}
+
+article > div {
+    font-family: 'Raleway', sans-serif;    
+    font-size: 20vh;
+    font-weight: 700;
+    padding-left: 5vh;
+}
+
+
+.red{
+    color: rgba(255, 0, 0);
+    margin-bottom: 0.5vh;
+    mix-blend-mode: multiply;
+}
+
+.blue{
+    color: rgba(0, 0, 255);
+    margin-top: -23.5vh;
+    margin-left: 0.5vh;
+    mix-blend-mode: multiply;
+}
+
+.green{
+    color: rgb(0, 255, 0);
+    margin-top: -23vh;
+    mix-blend-mode: multiply;
+}
+
+
+.s {
+    font-size: 10vh;
+}
