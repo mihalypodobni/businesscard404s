@@ -1,13 +1,58 @@
-#card_back {
-    margin: auto;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Raleway', sans-serif;
+}
+
+.card {
+    background-color: transparent;
     width: 1050px;
     height: 600px;
-    border: 1px solid black;
+    perspective: 1600px;
+}
 
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
+.card_inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
-    overflow: hidden;
+}
+
+.card:hover .card_inner {
+    transform: rotateY(180deg);
+}
+
+.card_front .card_back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.card_front{
+    background-color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+
+.card_back {
+    background-color: white;
+    transform: rotateY(180deg);
+}
+
+
+#rectangles {
+    height: 100%;
+    width: 100%;
+
 }
 
 #rec_red {
@@ -20,44 +65,105 @@
     background: #FF0000;
     mix-blend-mode: multiply;
     transform: rotate(-35.4deg);
-    
 } 
     
 #rec_blue {
     position: relative;
-    width: 756px;
-    height: 319px;
-    left: 294px;
-    top: -681px;
+    width: 1050px;
+    height: 180px;
+    left:0px;
+    top: -560px;
         
     background: #0000FF;
     mix-blend-mode: multiply;
     
 } 
+    
+#rec_green {
+    position: relative;
+    width: 1200px;
+    height: 300px;
+    left: -350px;
+    top: -1405.86px;
+    
+    background: #00FF00;
+    mix-blend-mode: multiply;
+    transform: rotate(-50deg);
+}  
 
-#details {
-    width: 50%;
-    height: 50%;
-    float: right;
-    margin: 20px;
-    position: fixed;
-    font-size: 24px;
+/* mihaly's css for logo*/
 
-    top: 300px;
+#logo {
+    font-size: 80px;
+    font-weight: 700;
+    margin-bottom: -180px;
 }
 
-#text{
-    padding-right: 140px;
+
+.red {
+    color: rgba(255, 0, 0);
+    mix-blend-mode: multiply;
+
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+
+.blue {
+    color: rgba(0, 0, 255);
+    mix-blend-mode: multiply;
+
+    position: relative;
+    left: 2px;
+    top: -100px;
+}
+
+.green{
+    color: rgb(0, 255, 0);
+
+    mix-blend-mode: multiply;
+    position: relative;
+    left: 5px;
+    top: -190px;
+}
+
+.s {
+    font-size: 56px;
+}
+
+#details {
+    max-width: 400px;
+    height: 50%;
+    margin-left: 600px;
+
+    position: relative;
+    font-size: 24px;
+
+    top: -1400px;
+}
+
+#text {
+    margin-bottom: 40px;
+}
+
+#contact { 
+    
 }
 
 a {
-    color: black;
+    color: rgb(0, 0, 0);
     text-decoration: none;
+    line-height: 40px;
 }
 
+a:hover{
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(0,255,0,1) 50%, rgba(0,0,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
+/* font-awesome icons */
 .fa-envelope, .fa-github {
-
     font-size: 24px;
 }
 
@@ -65,3 +171,97 @@ i {
     margin-right: 20px;
 }
 
+/* bruno'S CSS */
+
+article {
+    font-size: 180px;
+    position: absolute;
+    line-height: 70px;
+}
+
+article:nth-of-type(1) {
+    margin-left: -5px;
+}
+
+article:nth-of-type(2) {
+    margin-left: 330px;
+}
+
+article:nth-of-type(3) {
+    margin-left: 670px;
+}
+
+article>div {
+    width: 522px;
+    height: 140px;
+    position: absolute;
+}
+
+article>div>span {
+    display: inline-block;
+    mix-blend-mode: multiply;
+    position: absolute;
+    background-color: white;
+}
+
+.color-red {
+    color:#ff0000;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.color-green {
+    color: #00ff00;
+    margin-top: 0;
+    margin-left: 40px;
+}
+
+.color-blue {
+    color: #0000ff;
+    margin-top: 0;
+    margin-left: 80px;
+}
+
+article>div:nth-of-type(2) {
+    margin-top: 60px;
+}
+
+article>div:nth-of-type(3) {
+    margin-top: 120px;
+}
+
+article>div:nth-of-type(4) {
+    margin-top: 180px;
+}
+
+article>div:nth-of-type(5) {
+    margin-top: 240px;
+}
+
+article>div:nth-of-type(6) {
+    margin-top: 300px;
+}
+
+article>div:nth-of-type(7) {
+    margin-top: 360px;
+}
+
+article>div:nth-of-type(8) {
+    margin-top: 420px;
+}
+
+article>div:nth-of-type(9) {
+    margin-top: 480px;
+}
+
+.color-green:hover {
+    color: rgb(194, 23, 23);
+}
+
+.color-red:hover {
+    color: rgb(231, 31, 241);
+}
+
+.color-blue:hover {
+    color: rgb(238, 189, 97);
+}
