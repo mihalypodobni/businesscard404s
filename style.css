@@ -38,22 +38,23 @@ body {
     backface-visibility: hidden;
 }
 
-.card_front{
+.card_front {
     background-color: rgb(255, 255, 255);
     font-weight: 700;
-    
 }
 
 .card_back {
     background-color: white;
     transform: rotateY(180deg);
+    height: 600px;
+    width: 1050px;
+    overflow: hidden;
 }
 
 
 #rectangles {
     height: 100%;
     width: 100%;
-
 }
 
 #rec_red {
@@ -62,35 +63,35 @@ body {
     height: 980px;
     left: -80px;
     top: -60px;
-    
+
     background: #FF0000;
     mix-blend-mode: multiply;
     transform: rotate(-35.4deg);
-} 
-    
+}
+
 #rec_blue {
     position: relative;
     width: 1050px;
     height: 180px;
-    left:0;
-    top: -580px;
-        
+    left: 0;
+    top: -550px;
+
     background: #0000FF;
     mix-blend-mode: multiply;
-    
-} 
-    
+
+}
+
 #rec_green {
     position: relative;
     width: 1200px;
     height: 300px;
     left: -350px;
     top: -1405.86px;
-    
+
     background: #00FF00;
     mix-blend-mode: multiply;
     transform: rotate(-50deg);
-}  
+}
 
 /* mihaly's css for logo*/
 
@@ -119,7 +120,7 @@ body {
     top: -100px;
 }
 
-.green{
+.green {
     color: rgb(0, 255, 0);
 
     mix-blend-mode: multiply;
@@ -141,15 +142,14 @@ body {
     font-size: 24px;
 
     top: -1400px;
+
 }
 
 #text {
     margin-bottom: 40px;
 }
 
-#contact { 
-    
-}
+#contact {}
 
 a {
     color: rgb(0, 0, 0);
@@ -157,14 +157,15 @@ a {
     line-height: 40px;
 }
 
-a:hover{
-    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(0,255,0,1) 50%, rgba(0,0,255,1) 100%);
+a:hover {
+    background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(0, 255, 0, 1) 50%, rgba(0, 0, 255, 1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 /* font-awesome icons */
-.fa-envelope, .fa-github {
+.fa-envelope,
+.fa-github {
     font-size: 24px;
 }
 
@@ -174,7 +175,7 @@ i {
 
 /* bruno'S CSS */
 
-.card_front > section {
+.card_front>section {
     width: 1050px;
     height: 600px;
     background-color: white;
@@ -214,7 +215,7 @@ article>div>span {
 }
 
 .color-red {
-    color:#ff0000;
+    color: #ff0000;
     margin-top: 0;
     margin-left: 0;
 }
