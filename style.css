@@ -6,23 +6,23 @@ body {
     width: 100vw;
     height: 100vh;
     font-family: 'Raleway', sans-serif;
+    overflow: hidden;
 }
 
 .card {
     background-color: transparent;
     width: 1050px;
     height: 600px;
-    perspective: 1600px;
+    perspective: 3000px;
 }
 
 .card_inner {
     position: relative;
     width: 100%;
     height: 100%;
-    transition: transform 0.6s;
+    transition: transform 0.9s;
     transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
 }
 
 .card:hover .card_inner {
@@ -71,8 +71,8 @@ body {
     position: relative;
     width: 1050px;
     height: 180px;
-    left:0px;
-    top: -560px;
+    left:0;
+    top: -580px;
         
     background: #0000FF;
     mix-blend-mode: multiply;
@@ -173,14 +173,22 @@ i {
 
 /* bruno'S CSS */
 
+.card_front > section {
+    width: 1050px;
+    height: 600px;
+    background-color: white;
+    position: absolute;
+    overflow: hidden;
+}
+
 article {
     font-size: 180px;
     position: absolute;
-    line-height: 70px;
+    line-height: 92px;
 }
 
 article:nth-of-type(1) {
-    margin-left: -5px;
+    margin-left: 0;
 }
 
 article:nth-of-type(2) {
